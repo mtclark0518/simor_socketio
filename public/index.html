@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Simor_Socket</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">;
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <section class="chat-wrapper">
+        <ul class="pages">
+            <li class="chat page">
+                <div class="chatArea">
+                    <ul class="messages"></ul>
+                </div>
+                <input class="inputMessage" placeholder="your message...">
+            </li>
+            <li class="login page">
+                <div class="form">
+                    <h3 class="title">Your name: </h3>
+                    <input class="usernameInput" type="text">
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>
