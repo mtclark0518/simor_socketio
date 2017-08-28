@@ -7,7 +7,9 @@ const io = require('socket.io')(server);
 
 //ROUTES
 app.use(express.static(__dirname + '/public'));
-app.get(__dirname + 'index.html');
+app.get('/', function(req,res) {
+    res.sendFile(__dirname + 'index.html');
+});
 
 //SERVER
 const PORT = 3000;
@@ -25,7 +27,6 @@ var numUsers = 0;
 
 //ROOMS
 
-var rooms = ['room1', 'room2', 'room3'];
 
 io.sockets.on('connection', function(socket) {
 
@@ -38,13 +39,11 @@ io.sockets.on('connection', function(socket) {
         socket.username = username;
         ++numUsers;
         addedUser = true;
-        socket.room = 'room1';
-        socket.join('room1');
         socket.emit('login', {
             numUsers: numUsers
         });
         // echo globally (all clients) that a person has connected
-        socket.broadcast.to('room1').emit('updatechat', 'SERVER', username + ' has joined the room');
+        socket.broadcast.emit('updatechat', 'SERVER', username + ' has joined the room');
 
 
         // when the client emits 'new message', this listens and executes
