@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 html,
 body {
     height: 100%;
@@ -22,8 +20,7 @@ section {
     height: 80%;
     margin: auto;
     background: white;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 ul {
@@ -31,15 +28,17 @@ ul {
     word-wrap: break-word;
 }
 
+
 /* Header */
+
 .header {
     height: 55px;
     line-height: 55px;
     background: #66A02F;
     font-size: 14.5px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
+
 svg.logo {
     align-content: center;
     max-height: 50px;
@@ -48,6 +47,8 @@ svg.logo {
     padding-left: 5px;
     margin: none;
 }
+
+
 /* Pages */
 
 .pages {
@@ -65,7 +66,7 @@ svg.logo {
 /* Login Page */
 
 .login.page {
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0, 0, 0, .9);
 }
 
 .login.page .form {
@@ -84,7 +85,7 @@ svg.logo {
     padding: 15px 0;
     text-align: center;
     width: 250px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #eee;
 }
 
 .login.page .title {
@@ -93,20 +94,18 @@ svg.logo {
 
 .login.page .usernameInput {
     font-size: 100%;
-
 }
 
 .login.page .title,
 .login.page .usernameInput {
-    color: #fff;
-
+    color: #eee;
 }
 
 input.usernameInput {
     padding: none;
     max-height: 65px;
-
 }
+
 
 /* Chat page */
 
@@ -117,6 +116,7 @@ input.usernameInput {
 .chatArea {
     height: 100%;
 }
+
 
 /* Messages */
 
@@ -150,7 +150,6 @@ input.usernameInput {
 /* Input */
 
 .inputMessage {
-    border-top: 1px solid #000;
     height: 50px;
     bottom: 0;
     left: 0;
@@ -160,10 +159,3 @@ input.usernameInput {
     width: 100%;
     margin: 0;
 }
-
-
-
-
-
-
-
