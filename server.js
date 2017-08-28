@@ -7,7 +7,7 @@ const io = require('socket.io')(server);
 
 //SERVER
 const PORT = 3000;
-server.listen(PORT, () => {
+app.listen(PORT, () => {
     console.log('---i\'m alllllive on port: ' + PORT);
 });
 
