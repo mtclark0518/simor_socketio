@@ -4,7 +4,7 @@ const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
 
-app.listen(process.env.PORT || 3000
+app.listen(process.env.PORT || 3000);
 
 
 //SERVER
@@ -15,7 +15,7 @@ app.listen(process.env.PORT || 3000, () => {
 //ROUTES
 app.use(express.static(__dirname + '/public'));
 app.get('/', function(req,res) {
-    res.sendFile('index.html');
+    res.sendFile(__dirname + 'index.html');
 });
 
 
