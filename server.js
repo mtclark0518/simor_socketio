@@ -4,12 +4,11 @@ const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
 
-
+app.listen(process.env.PORT || 3000
 
 
 //SERVER
-const PORT = 3000;
-server.listen(PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('---i\'m alllllive on port: ' + PORT);
 });
 
