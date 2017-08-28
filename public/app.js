@@ -25,8 +25,6 @@ $(function() {
 
     var socket = io();
 
-
-
     function addParticipantsMessage(data) {
         var message = '';
         if (data.numUsers === 1) {
