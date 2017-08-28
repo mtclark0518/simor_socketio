@@ -139,6 +139,10 @@ input.usernameInput {
     color: #334C12;
 }
 
+.message {
+    padding-bottom: 5px;
+}
+
 .username {
     font-weight: 700;
     overflow: hidden;
