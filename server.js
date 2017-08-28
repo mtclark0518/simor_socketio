@@ -3,14 +3,18 @@ const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
+
+
+//ROUTES
+app.use(express.static(__dirname + '/public'));
+app.get(__dirname + 'index.html');
+
 //SERVER
 const PORT = 3000;
 server.listen(PORT, () => {
     console.log('---i\'m alllllive on port: ' + PORT);
 });
 
-//ROUTES
-app.use(express.static(__dirname + '/public'));
 
 
 
