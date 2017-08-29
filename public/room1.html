@@ -137,16 +137,25 @@
             </div>
         </div>
     </header>
-    <ul class="chatrooms">
-        <li class="chatroom"> <a href="./room1.html">Room1</a></li>
-        <li class="chatroom"> <a href="./room1.html">Room2</a></li>
-        <li class="chatroom"> <a href="./room1.html">Room3</a></li>
-        <li class="chatroom"> <a href="./room1.html">Room4</a></li>
-
-    </ul>
+    <section class="chatWrapper">
+        <ul class="pages">
+            <li class="chat page">
+                <div class="chatArea">
+                    <ul class="messages"></ul>
+                </div>
+                <input class="inputMessage" placeholder="your message...">
+            </li>
+            <li class="login page">
+                <div class="form">
+                    <h3 class="title">Your Name: </h3>
+                    <input class="usernameInput" type="text">
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./socket_chat.js"></script>
 </body>
-<footer>
-
-</footer>
 
 </html>

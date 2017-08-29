@@ -5,17 +5,18 @@ const io = require('socket.io')(server);
 
 
 
+
 //SERVER
-const PORT = 3000;
+var PORT = 3000;
 server.listen(PORT, () => {
     console.log('---i\'m alllllive on port: ' + PORT);
 });
 
-
-//ROUTES
 app.use(express.static(__dirname + '/public'));
 
-
+//ROUTES
+var routes = require('./config/routes');
+app.use('/', routes);
 
 
 //This breaks whenever i try to bring it out into another file
